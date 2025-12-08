@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+
+#start swwww
+swww-daemon & sleep 0.1
+
+swww img /home/me/Bilder/Wallpapers/spaceship-start.jpg

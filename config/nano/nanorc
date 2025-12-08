@@ -1,0 +1,15 @@
+set cutfromcursor
+set nohelp
+set tabstospaces
+set constantshow
+set historylog
+set positionlog
+set autoindent
+set indicator
+
+set backup
+set backupdir "~/.cache/nano/backups/"
+
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano/extra/*.nanorc"
+include "/usr/share/nano-syntax-highlighting/*.nanorc"
