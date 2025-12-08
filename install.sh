@@ -105,7 +105,7 @@ install() {
     echo -e "${YELLOW}Copy zsh profiles to /mnt/root${NORMAL}\n"
     cp /etc/zsh/zprofile /mnt/root/.zprofile
     cp /etc/zsh/zshrc /mnt/root/.zshrc
-    cp /root/HyprElite/chroot.sh /mnt/root && chmod +x /mnt/root/chroot.sh
+    cp /root/Kdelite/chroot.sh /mnt/root && chmod +x /mnt/root/chroot.sh
     echo -e "${YELLOW}Set you new root password${NORMAL}\n"
     arch-chroot /mnt /bin/passwd root
     sleep 0.5
@@ -121,19 +121,19 @@ install() {
     sleep 3
 
     echo -e "${YELLOW}Copy dotfiles${NORMAL}\n"
-    cp -R /root/HyprElite/config/* /mnt/home/${USERNAME}/.config/
+    cp -R /root/Kdelite/config/* /mnt/home/${USERNAME}/.config/
     arch-chroot /mnt sudo chown -R ${USERNAME}:${USERNAME} /home/${USERNAME}/.config
     echo -e "${GREEN}Done${NORMAL}\n"
     sleep 0.5
 
     echo -e "${YELLOW}Copy fonts${NORMAL}\n"
-    cp -R /root/HyprElite/fonts/* /mnt/home/${USERNAME}/.local/share/fonts/
+    cp -R /root/Kdelite/fonts/* /mnt/home/${USERNAME}/.local/share/fonts/
     arch-chroot /mnt sudo chown -R ${USERNAME}:${USERNAME} /home/${USERNAME}/.local/share/fonts
     echo -e "${GREEN}Done${NORMAL}\n"
     sleep 0.5
 
     echo -e "${YELLOW}Copy wallpapers${NORMAL}\n"
-    cp -R /root/HyprElite/wallpapers/* /mnt/home/${USERNAME}/Bilder/Wallpapers/
+    cp -R /root/Kdelite/wallpapers/* /mnt/home/${USERNAME}/Bilder/Wallpapers/
     arch-chroot /mnt sudo chown -R ${USERNAME}:${USERNAME} /home/${USERNAME}/Bilder
     echo -e "${GREEN}Done${NORMAL}\n"
     sleep 0.5
