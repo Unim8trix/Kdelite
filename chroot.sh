@@ -155,11 +155,10 @@ install() {
     sleep 2
     su ${USERNAME} -c "yay --noconfirm -Sy vulkan-radeon mesa firefox-developer-edition-i18n-de \
       plasma-meta breeze-plymouth plymouth-theme-arch-charge plymouth-kcm \
-      nordzy-cursors papirus-icon-theme papirus-folders-nordic \
-      bluez-utils modemmanager usb_modeswitch btop \
-      noto-fonts noto-fonts-emoji ghostty zed fzf jq yq \
+      breeze-gtk kde-gtk-config kde-system-meta kde-utilities-meta dolphin okular \
+      nordzy-cursors papirus-icon-theme bluez-utils modemmanager usb_modeswitch btop \
       pipewire-alsa pipewire-pulse pipewire-jack sof-firmware alsa-firmware \
-      starship fastfetch"
+      noto-fonts noto-fonts-emoji ghostty zed fzf jq yq starship fastfetch"
     echo -e "${GREEN}Done${NORMAL}\n"
     sleep 5
 
@@ -174,7 +173,7 @@ install() {
     sleep 1
 
     echo -e "${YELLOW}Configure ramdisk for plymouth${NORMAL}\n"
-    sed -i 's/HOOKS=.*/HOOKS=(base systemd plymouth keyboard autodetect microcode modconf kms block sd-vconsole sd-encrypt filesystems fsck)/' /etc/mkinitcpio.conf
+    sed -i 's/HOOKS=.*/HOOKS=(systemd plymouth keyboard autodetect microcode modconf kms block sd-vconsole sd-encrypt filesystems fsck)/' /etc/mkinitcpio.conf
     mkinitcpio -P
     echo -e "${GREEN}Done${NORMAL}\n"
     sleep 1

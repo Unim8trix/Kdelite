@@ -53,19 +53,18 @@ Localisations are for german, so adjust for your own needs.
 
 | Arch packages                          | Description                                                                                   |
 | :--------------------------------------| :---------------------------------------------------------------------------------------------|
-| **mesa, vulkan-radeon**                | OpenGL and Vulkan drivers for amd gpu |
+| **vulkan-radeon mesa**                 | OpenGL and Vulkan drivers for amd gpu |
 | **plasma-meta**                        | KDE Plasma Meta Package |
+| **breeze-gtk kde-gtk-config kde-system-meta kde-utilities-meta dolphin okular** | KDE Apps |
+| **firefox-developer-edition-i18n-de**  | My default browser |
 | **plymouth plymouth-theme-arch-charge**| Plymouth boot splash screen |
 | **ghostty**                            | My default terminal |
 | **zed**                                | My default editor |
-| **firefox-developer-edition-i18n-de**  | My default browser |
-| **nano**                               | CLI based editor |
-| **pipewire**                           | Audioserver |
-| **sof-firmware, alsa-firmware**        | Soundcard firmware |
-| **oh-my-zsh, starship**                | Customize terminal shell |
-| **fastfetch**                          | CLI based system information |
-| **papirus-icon-theme**                 | Icon theme |
-| **papirus-folders-nordic**             | Nord based color theme |
+| **starship**                           | Customize terminal shell |
+| **papirus-icon-theme nordzy-cursor**   | Some theming stuff |
+| **noto-fonts noto-fonts-emoji**        | System fonts |
+| **nano fastfetch fzf jq yq**           | Some CLI tools |
+| **pipewire sof-firmware alsa-firmware** | Audio server and firmware |
 
 # 🚀 Installation
 
